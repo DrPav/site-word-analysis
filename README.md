@@ -55,6 +55,8 @@ The core code can be wrapped in a flask API or cloud lambda function. A docker c
 ### Wordcloud
 A wordcloud is a popular to visualise word counts. The python [wordcloud](https://github.com/amueller/word_cloud) library is easy to implement.
 
+![Word Cloud Example](https://github.com/amueller/word_cloud/blob/master/examples/constitution.png)
+)
 
 
 
