@@ -86,7 +86,7 @@ if __name__ == "__main__":
         os.mkdir(path)
 
     df = construct_df(url, n)
-    df.to_csv(path+'data.csv')
+    df.to_csv(path+'data.csv', index=False)
     cluster_plot(df, path)
 
 
