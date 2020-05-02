@@ -2,6 +2,8 @@
 A program to analyse text on a website and output counts of the words and attempt to cluster the words into n buckets of similar words.
 See the [notebook](https://github.com/DrPav/site-word-analysis/blob/master/website-nlp.ipynb) to get an idea of how it works.
 
+![Clusters Graph](https://github.com/DrPav/site-word-analysis/blob/master/graph.PNG)
+
 ## Installation
 Clone the repository and install the requirements with pip or anaconda (recommended). You need python 3.
 The analysis depends on a pre-trained english language model from [Spacy](www.spacy.io) which needs to be downloaded and installed.
@@ -24,7 +26,7 @@ The python file takes 3 positional arguments
 The model is very sensitive to the number of clusters, try to pick a number that you think matches the number of word types you expect at the url. A good default is 8. An extra cluster is always crated to hold words that a not recognised in the pre-trained model vocabulary.
 
 ### example
-    python word-analysis.py 6 example_output https://www.bbc.co.uk/news
+    python word-analysis.py 5 example_output https://www.bbc.co.uk/news
     
 ## Output
 A csv file with columns
@@ -49,6 +51,9 @@ SQL Alchemy can be used to output to a relational database. For evaluation clust
 
 ### Website and API
 The core code can be wrapped in a flask API or cloud lambda function. A docker container would be needed to deploy the code with all data science dependencies and the spacy language model. A front end website can also be built once there is an API  that can take a post request with the given parameters and return a json with the data. [Plotly](https://plotly.com/python/) was used to make the plot in python. Plotly also has a [javascript library](https://plotly.com/javascript/).
+
+### Wordcloud
+A wordcloud is a popular to visualise word counts. The python [wordcloud](https://github.com/amueller/word_cloud) library is easy to implement.
 
 
 
