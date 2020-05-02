@@ -42,7 +42,7 @@ A html file containing an interactive chart to explore the data.
 ## Future Work
 
 ### Tests and Evaluation
-Tests could be written with a framework like pytest to test each component as the project evolves. Since the input to the program is a url and hence continually changing a special test website may have to be set-up that does not change and the word counts are known.
+Tests could be written with a framework like pytest to test each component as the project evolves. Error handling and logging should be added to the code if being used in production. Since the input to the program is a url and hence continually changing a special test website may have to be set-up that does not change and the word counts are known.
 
 To evaluate the clusters a human would need to evaluate. If the tool is to be used on a certain domain then a training data set could be created giving the expected outputs for given texts. In this case accuracy could be used as a evaluation metric and the problem can become a supervised problem instead of a unsupervised one. The model can also then be improved by fine tuning on a domain specific corpus.
 
@@ -56,7 +56,7 @@ The core code can be wrapped in a flask API or cloud lambda function. A docker c
 A wordcloud is a popular to visualise word counts. The python [wordcloud](https://github.com/amueller/word_cloud) library is easy to implement.
 
 ![Word Cloud Example](https://github.com/amueller/word_cloud/blob/master/examples/constitution.png)
-)
+
 
 
 
