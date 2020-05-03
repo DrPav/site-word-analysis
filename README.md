@@ -29,7 +29,7 @@ The model is very sensitive to the number of clusters, try to pick a number that
     python word-analysis.py 5 example_output https://www.bbc.co.uk/news
     
 ## Output
-A csv file with columns
+1. A csv file with columns
 
 * word
 * word count
@@ -37,7 +37,9 @@ A csv file with columns
 * distance to cluster centre
 * Decomposition of the word vector into 2-dimensional space using [Principal Component Analysis](https://scikit-learn.org/stable/modules/decomposition.html#pca) (PCA)
 
-A html file containing an interactive chart to explore the data.
+2. A html file containing an interactive chart to explore the data.
+
+See the [output](https://github.com/DrPav/site-word-analysis/tree/master/example_output) obtained when running the example above
     
 ## Future Work
 
