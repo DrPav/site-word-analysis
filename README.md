@@ -39,7 +39,7 @@ The model is very sensitive to the number of clusters, try to pick a number that
 
 2. A html file containing an interactive chart to explore the data.
 
-See the [output](https://github.com/DrPav/site-word-analysis/tree/master/example_output) when running the example above
+See the [output](https://github.com/DrPav/site-word-analysis/tree/master/example_output) obtained when running the example above
     
 ## Future Work
 
